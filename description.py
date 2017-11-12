@@ -5,7 +5,8 @@ past four decades, reflective of not only the country's \
 excessively punitive criminal justice system, but also its \
 perpetuation of oppression along racial lines. The sliders \
 represent different circumstances the user can change about \
-the simulation. The population of the simulation can be increased \
+the simulation. The frames per second slider will change how fast the \
+simulation runs. The population of the simulation can be increased \
 or decreased. The average sentence length refers to how long on average \
 the population will stay in prison and the longer the sentence, the more \
 "contagious" incarceration is in the simulation. The race of the \
