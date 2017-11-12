@@ -5,7 +5,7 @@
 # :................................................................:
 
 from model                                   import IncarModel
-from description                             import description
+from description                             import *
 from mesa.visualization.ModularVisualization import ModularServer
 from mesa.visualization.modules              import CanvasGrid
 from mesa.visualization.modules              import ChartModule
@@ -40,7 +40,9 @@ grid = CanvasGrid(agent_portrayal, 50, 40, 750, 600)
 
 n_slider = UserSettableParameter('slider', "Number of people", 1000, 100, 5000, 1)
 
-static_text = UserSettableParameter('static_text', value=description)
+static_text1 = UserSettableParameter('static_text', value=description1)
+static_text2 = UserSettableParameter('static_text', value=description2)
+static_text3 = UserSettableParameter('static_text', value=description3)
 
 race_option = UserSettableParameter('choice', 'Race of Simulated Population', 
                                                value='Black',
@@ -54,4 +56,5 @@ chart = ChartModule([{"Label": "Incidence",
 
 server = ModularServer(IncarModel, [grid, chart], "Carceral Contagion",
                        {"N": n_slider, "width": 50, "height": 40, 
-                       "sentence_l": bsl_slider, "race": race_option, "text": static_text})
+                       "sentence_l": bsl_slider, "race": race_option, 
+                       "text1": static_text1, "text2": static_text2, "text3": static_text3})

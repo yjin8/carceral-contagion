@@ -33,7 +33,7 @@ class IncarModel(Model):
     'transmit' the likeliness of being incarcerated through risk behaviors
     and psychological conditioning, hence spreading the risk of being imprisoned.
     """
-    def __init__(self, N, width, height, sentence_l, race, text=""):
+    def __init__(self, N, width, height, sentence_l, race, text1="", text2="", text3=""):
         self.running = True
         self.num_agents = N
         self.grid = MultiGrid(width, height, True)
