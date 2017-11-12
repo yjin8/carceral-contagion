@@ -40,8 +40,16 @@ Then open your browser to [http://127.0.0.1:8521/](http://127.0.0.1:8521/) and p
 * ``model.py``: Contains the agent class, and the overall model class.
 * ``server.py``: Defines classes for visualizing the model in the browser via Mesa's modular server, and instantiates a visualization server.
 
+## Sources
+[Mitchell, Ojmarrh. "A meta-analysis of race and sentencing research: Explaining the
+inconsistencies." Journal of Quantitative Criminology 21.4 (2005): 439-466] (https://www.jstor.org/stable/23367476)
+
+[Dallaire, Danielle H. "Incarcerated mothers and fathers: A comparison of risks for children
+and families." Family relations 56.5 (2007): 440-453.](http://onlinelibrary.wiley.com/doi/10.1111/j.1741-3729.2007.00472.x/abstract)
+
 ## Further Reading
 
-An engrossing book describing the nature of the criminal justice system!:
+For a holistic perspective on the nature of the prison industrial complex:
 
-[The New Jim Crow by Michelle Alexander](http://newjimcrow.com/)
+[Alexander, Michelle. The New Jim Crow: Mass Incarceration in the Age of Colorblindness. The
+New Press, 2012.](http://newjimcrow.com/)
