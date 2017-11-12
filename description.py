@@ -13,11 +13,13 @@ reflective of not only the country's excessively punitive
 criminal justice system, but also its perpetuation of oppression 
 along racial lines.'''
 
-description2 = '''The population of the simulation can be increased \
-or decreased. \n The average sentence length refers to how long on average \
-the population will stay in prison and the longer the sentence, the more \
-"contagious" incarceration is in the simulation.'''
+description2 = '''The grid to the right represents a simulated community of either black or white individuals, 
+each circle labeled with 'M' or 'F' indicating gender. A grey circle indicates that a person has never been incarcerated,
+a blue circle indicates the person is currently imprisoned, and a red circle indicates the person has been released from prison
+and is able to interact with other agents.'''
 
-description3 = '''\n The race of the simulated population can be switched between black and white. This is to \
-illustrate the difference of the incarceration epidemic between black \
-and white populations'''
+description3 = '''The population of the simulation can be increased \
+or decreased. \n The average sentence length refers to the maximum amount of time \
+in months any individual - once incarcarated - will remain in prison. The longer the sentence, the more \
+infectious the possibility of incarceration. The race of the simulated population can be toggled between black and white, illustrating the racial disparity \
+in incarceration rates'''

@@ -5,6 +5,6 @@
 # : -- Launches a model visualization server.                      :
 # :................................................................:
 
-from servertest import server
+from server import server
 server.port = 8521
 server.launch()

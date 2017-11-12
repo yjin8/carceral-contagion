@@ -44,7 +44,7 @@ def agent_portrayal(agent):
 grid = CanvasGrid(agent_portrayal, 50, 40, 750, 600)
 
 # Slider to adjust population count
-n_slider = UserSettableParameter('slider', "Number of people", 1000, 100, 5000, 1)
+n_slider = UserSettableParameter('slider', "Population Count", 1000, 100, 5000, 1)
 
 # Static Text used for model description
 static_text1 = UserSettableParameter('static_text', value=description1)
@@ -58,16 +58,19 @@ race_option = UserSettableParameter('choice', 'Race of Simulated Population',
 
 # Independent sliders for black and white sentence lengths
 # different ones are required due to distinct default values
-bsl_slider = UserSettableParameter('slider', "Average Sentence Length", 17, 1, 100, 1)
-wsl_slider = UserSettableParameter('slider', "Average Sentence Length", 14, 1, 100, 1)
+bsl_slider = UserSettableParameter('slider', "Max Sentence Length", 17, 1, 100, 1)
+wsl_slider = UserSettableParameter('slider', "Max Sentence Length", 14, 1, 100, 1)
 
 # Displays a line chart showing incarceration rate over time
 chart = ChartModule([{"Label": "Incarceration Rates",
                       "Color": "Black"}],
                     data_collector_name='datacollector')
 
+# Dictionary of parameters for IncarModel
+model_params = {"N": n_slider, "width": 50, "height": 40, 
+                "sentence_l": bsl_slider, "race": race_option, 
+               "text1": static_text1, "text2": static_text2, "text3": static_text3}
+
 # Call to Mesa's server module which runs our incarceration model
-server = ModularServer(IncarModel, [grid, chart], "Carceral Contagion",
-                       {"N": n_slider, "width": 50, "height": 40, 
-                       "sentence_l": bsl_slider, "race": race_option, 
-                       "text1": static_text1, "text2": static_text2, "text3": static_text3})
+server = ModularServer(IncarModel, [grid, chart], 
+                       "Carceral Contagion", model_params)
