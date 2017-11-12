@@ -38,14 +38,15 @@ class IncarModel(Model):
         self.num_agents = N
         self.grid = MultiGrid(width, height, True)
         self.schedule = RandomActivation(self)
-        self.sentence_l = 17
         self.race = race
 
         # Create agents
         for i in range(self.num_agents):
             if self.race == 'Black':
+                self.sentence_l = 17
                 a = Person(i, self, 0.03023, self.sentence_l)
             else:
+                self.sentence_l = 14
                 a = Person(i, self, 0.00478, self.sentence_l)
             self.schedule.add(a)
             # Add the agent to a random grid cell

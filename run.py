@@ -4,6 +4,6 @@
 # : carceral-contagion/run.py                                      :
 # :................................................................:
 
-from server import server
+from servertest import server
 #server.port = 8521
 server.launch()
