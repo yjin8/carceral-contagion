@@ -1,0 +1,1 @@
+description = '''Mass incarceration refers to the substantial increase in incarcerated individuals in the United States over the past four decades, reflective of not only the United States' excessively punitive criminal justice system, but also its perpetuation of oppression along racial lines.'''
