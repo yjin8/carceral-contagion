@@ -131,7 +131,6 @@ class Person(Agent):
     
         self.current_age += (1/52)
         self.year += 1/52
-        print(self.year)
             
         if self.incarcerated == False:
             self.incarcerated = random() < self.func_incar_prob
